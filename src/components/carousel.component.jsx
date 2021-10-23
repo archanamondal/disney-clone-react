@@ -7,6 +7,10 @@ const Image = styled.img`
   height: 100%;
   width: 100%;
   margin: 0 40px;
+
+  @media (max-width: 480px) {
+    width: 80%;
+  }
 `;
 
 function Carousel() {

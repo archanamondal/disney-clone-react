@@ -15,6 +15,10 @@ const Container = styled.div`
 const ImageOne = styled.img`
   height: 80px;
   margin-bottom: 7px;
+
+  @media (max-width: 480px) {
+    height: 62px;
+  }
 `;
 
 const Button = styled.button`
@@ -24,11 +28,20 @@ const Button = styled.button`
   color: #fff;
   outline: none;
   border: none;
+
+  @media (max-width: 480px) {
+    width: 70vw;
+    margin-bottom: 5px;
+  }
 `;
 
 const ImageTwo = styled.img`
   height: 20px;
   margin-top: 15px;
+
+  @media (max-width: 480px) {
+    height: 15px;
+  }
 `;
 
 const SubscriptionText = styled.p`
@@ -36,9 +49,14 @@ const SubscriptionText = styled.p`
   margin: 0;
   padding: 0;
   font-size: 9px;
+
+  @media (max-width: 480px) {
+    font-size: 6.5px;
+    margin-top: 5px;
+  }
 `;
 
-function Landingpage() {
+function Landing() {
   return (
     <>
       <Navbar />
@@ -59,4 +77,4 @@ function Landingpage() {
   );
 }
 
-export default Landingpage;
+export default Landing;

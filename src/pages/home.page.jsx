@@ -6,6 +6,7 @@ import Carousel from "../components/carousel.component";
 import styled from "styled-components";
 
 const HomeContainer = styled.div`
+  width: 100vw;
   margin: 0;
   padding: 0;
   background-color: #090b13;
@@ -21,6 +22,10 @@ const BrandContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 0 30px;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 function Home() {

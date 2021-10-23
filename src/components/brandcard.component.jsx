@@ -12,6 +12,11 @@ const Container = styled.div`
   border: 1px solid #f3f3f3;
   border-radius: 7px;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 480px) {
+    margin-bottom: 15px;
+    width: 220px;
+  }
 `;
 
 const Image = styled.img`
