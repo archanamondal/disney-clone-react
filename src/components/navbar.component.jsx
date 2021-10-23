@@ -7,7 +7,7 @@ const NavbarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  width: 100vw;
+  width: 100%;
   background-color: #000;
 `;
 

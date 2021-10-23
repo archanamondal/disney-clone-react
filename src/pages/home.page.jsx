@@ -1,10 +1,18 @@
 import React from "react";
+import Navbar from "../components/navbar.component";
 import Brandcard from "../components/brandcard.component";
 import Card from "../components/card.component";
+import Carousel from "../components/carousel.component";
 import styled from "styled-components";
 
 const HomeContainer = styled.div`
+  margin: 0;
+  padding: 0;
   background-color: #090b13;
+`;
+
+const SliderContainer = styled.div`
+  padding: 0 30px 30px 30px;
 `;
 
 const BrandContainer = styled.div`
@@ -18,6 +26,11 @@ const BrandContainer = styled.div`
 function Home() {
   return (
     <HomeContainer>
+      <Navbar />
+      <SliderContainer>
+        <Carousel />
+      </SliderContainer>
+
       <BrandContainer>
         <Brandcard imgurl={"./assets/images/scale17.jpg"} />
         <Brandcard imgurl={"./assets/images/scale10.jpg"} />

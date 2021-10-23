@@ -25,6 +25,12 @@ const ImgCard = styled.img`
   flex: 1;
   margin: 0px 10px;
   border-radius: 8px;
+
+  &:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
 `;
 
 function Card({ title, imageurls }) {
