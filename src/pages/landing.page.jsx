@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Navbar from "../components/navbar.component";
 
@@ -35,6 +36,15 @@ const Button = styled.button`
   }
 `;
 
+const HomeLink = styled(Link)`
+  text-decoration: none;
+  color: #f3f3f3;
+
+  &:active {
+    color: #f3f3f3;
+  }
+`;
+
 const ImageTwo = styled.img`
   height: 20px;
   margin-top: 15px;
@@ -62,7 +72,9 @@ function Landing() {
       <Navbar />
       <Container>
         <ImageOne src="./assets/images/cta-logo-one.svg" />
-        <Button>GET ALL THERE</Button>
+        <Button>
+          <HomeLink to="/home">GET ALL THERE</HomeLink>
+        </Button>
         <SubscriptionText>
           Get Premier To Raya and the last Dragon for an additional fee with a
           Disney + Subscription.

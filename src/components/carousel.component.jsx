@@ -9,7 +9,8 @@ const Image = styled.img`
   margin: 0 40px;
 
   @media (max-width: 480px) {
-    width: 80%;
+    width: 85%;
+    height: 80px;
   }
 `;
 

@@ -12,6 +12,13 @@ const Container = styled.div`
   border: 1px solid #f3f3f3;
   border-radius: 7px;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s all;
+
+  &:hover {
+    z-index: 1;
+    box-shadow: 0 10px 70px rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+  }
 
   @media (max-width: 480px) {
     margin-bottom: 15px;
