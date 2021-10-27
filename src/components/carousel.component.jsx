@@ -6,7 +6,7 @@ import Slider from "react-slick";
 const Image = styled.img`
   height: 100%;
   width: 100%;
-  margin: 0 40px;
+  margin: 0 25px;
 
   @media (max-width: 480px) {
     width: 85%;
